@@ -95,7 +95,7 @@ const Auth = () => {
             </button>
             <div className="flex flex-row items-center gap-4 mt-8 justify-center">
               <div
-                onClick={() => signIn("google", { callbackUrl: "/profiles" })}
+                onClick={() => signIn("google", { callbackUrl: "/" })}
                 className="
                 w-10
                 h-10
@@ -135,7 +135,7 @@ const Auth = () => {
                 onClick={toggleVariant}
                 className="text-white ml-1 hover:underline cursor:pointer"
               >
-                {variant === "login" ? "Create an Account" : "login"}
+                {variant === "login" ? "Create an Account" : "Login"}
               </span>
             </p>
           </div>
